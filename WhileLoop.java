@@ -1,8 +1,6 @@
 import java.util.Scanner;
-
 public class WhileLoop{
 	public static void main(String[] args){
-		
 		Scanner scan = new Scanner(System.in);
 		
 		int score;
@@ -10,15 +8,15 @@ public class WhileLoop{
 		double average;
 		int i = 1;
 		
-		while ( i<=10) {
+		while(i <= 10){
+			System.out.print("Enter score: ");
+			score = scan.nextInt();
 			
-		System.out.print("Enter your score: ");
-		score = scan.nextInt();
-		
-		sumOfScore += score;
-		i++;
+			sumOfScore += score;
+			i++;	
 		}
+		
 		average = (double)sumOfScore/10;
-		System.out.printf("The score average is %.2f", average);
+		System.out.printf("The score average is %.2f",average);
 	}
 }

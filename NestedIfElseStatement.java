@@ -7,22 +7,25 @@ public class NestedIfElseStatement{
 		int score;
 		String name;
 		
-		System.out.print("Enter your name: ");
-		name = scan.nextLine();
+		System.out.print("Enter your name");
+		name = scan.nextLine(); 
 		
-		System.out.print("Enter score: ");
-		score = scan.nextInt();
+		System.out.print("Enter your score");
+		score = scan.nextInt(); 
 		
 		if (score >= 90)
-			System.out.println(name + ", your grade is Outstanding");
-		else if (score >=75)
-			System.out.println(name + ", your grade is Excellent");
-		else if (score >=55)
-			System.out.println(name + ", your grade is Good");
-		else if (score >=45)
-			System.out.println(name + ", your grade is Average");
-		else
-			System.out.println(name + ", your grade is Poor");
+			System.out.println(name + " your grade is Outstanding");
 		
+		else if(score >= 75)
+			System.out.println(name + " your grade is Excellent");
+		
+		else if(score >= 55)
+			System.out.println(name + " your grade is Average");
+		
+		else if(score >= 45)
+			System.out.println(name + " your grade is Good");
+		
+		else
+			System.out.println(name + " your grade is very very very poor.Oh my Goodness!!!");
 	}
 }

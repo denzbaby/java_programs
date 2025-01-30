@@ -3,44 +3,45 @@ public class MethodOverloading{
 	public static void main(String[] args){
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("******Menu******");
+		
+		System.out.println("**********Menu**********");
 		System.out.println("Enter 1 to calculate perimeter of square");
 		System.out.println("Enter 2 to calculate perimeter of rectangle");
 		
-		int option = scan.nextInt();
 		
-		switch(option) {
-			case 1:
+		int option = scan.nextInt();
+		switch(option){
+			case 1 :
 			{
-					System.out.print("Enter length of the square: ");
-					int length = scan.nextInt();
-					MethodOverloading.shape(length);
-			}
+				System.out.println("Enter the length of square");
+				int length = scan.nextInt();
+				
+				MethodOverloading.shape(length);
+			}		
 			break;
 			
-			case 2:
+			case 2 :
 			{
-					System.out.print("Enter length of the rectangle: ");
-					int length = scan.nextInt();
-					
-					System.out.print("Enter breadth of the rectangle: ");
-					int breadth = scan.nextInt();
-					
-					MethodOverloading.shape(length,breadth);
+				System.out.println("Enter the length of square");
+				int length = scan.nextInt();
+				
+				System.out.println("Enter the breadth of square");
+				int breadth = scan.nextInt();
+				
+				MethodOverloading.shape(length,breadth);
 			}
-			break;
-			
+			break;	
+				
 			default:
-			System.out.println("Invalid Input");
+			System.out.println("Invalid input");
 		}
 	}
-	
-	public static void shape(int length) {
-		int perimeterOfSquare = 4 * length;
-		System.out.printf("The perimeter of the square is: %d", perimeterOfSquare);
+	public static void shape(int length){
+		int perimeterOfSquare = 4*length;
+		System.out.printf("The perimeter of a square is %d",perimeterOfSquare);
 	}
-	public static void shape(int length, int breadth) {
-		int perimeterOfRect = length*breadth;
-		System.out.printf("The perimeter of the rectangle is: %d", perimeterOfRect);
+	public static void shape(int length,int breadth){
+		int perimeterOfRectangle = length*breadth;
+		System.out.printf("The perimeter of a rectangle is %d",perimeterOfRectangle);
 	}
 }

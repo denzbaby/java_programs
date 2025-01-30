@@ -1,16 +1,13 @@
 public class StackExample{
 	public static void main(String[] args){
-		methodA(); // calling methods	
+		methodA(); //Calling methodA
 	}
-	
-	public satic void methodA() {
-		int x = 10; // local variable i methodA
-		methodA(); // calling methodB
+	public static void methodA(){
+		int x = 10; //Local variable in methodB
+		methodB();//Calling methodB
 	}
-	
-	public static void methodB() {
-		int y = 20; // local variable in methodB
-		//do something with y...
-		
+	public static void methodB(){
+		int y = 20; //Local variable in methodB
+		//Do something with y...
 	}
 }

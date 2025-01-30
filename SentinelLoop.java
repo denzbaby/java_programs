@@ -1,28 +1,25 @@
 import java.util.Scanner;
-
 public class SentinelLoop{
 	public static void main(String[] args){
-		
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter numbers to sum(enter -1 to stop) ");
+		
+		System.out.println("Enter numbers to sum (enter -1 to stop): ");
 		
 		int sum = 0;
-		int number;
+		int num;
 		
-		//sentinel value is -1
+		//Sentinel value is -1
 		while (true) {
-			System.out.print("Enter number: ");
-			number = scanner.nextInt();
+			System.out.println("Enter number: ");
+			num = scanner.nextInt();
 			
-			if (number == -1) {
+			if (num == -1){
 				break;
 			}
-			
-			sum += number;
+			sum += num;
 		}
-		
-		System.out.printf("The total sum is : %d", sum);
+		System.out.printf("The total sum is: %d "+ sum);
 		
 		scanner.close();
 	}
-}
+}		
